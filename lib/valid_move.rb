@@ -1,6 +1,6 @@
 # code your #valid_move? method here
 def valid_move?(board, pos)
-  return position_taken?(board, pos) ? false : true
+  return pos <  9  ? position_taken?(board, pos) ? false : true : nil
 end
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
